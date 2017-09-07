@@ -1,21 +1,9 @@
-var i = 100;
-var msg = '';
-while(i > 0) {
-	msg = msg + ' ' + i;
-	
-	switch (i%3) {
-		case 0:
-			msg += "";
-			break;
-		case 1:
-			msg += "#";
-			break;
-		case 2:
-			msg += "##";
-			break;
-	}
-	
-	--i;
-}
+var obj = window.navigator;
 
-alert(msg);
+for (var prop in obj) {
+	document.write("<tr>");
+	document.write("  <td>" + prop        + "</td>");
+	document.write("  <td>" + typeof obj[prop] + "</td>");
+	document.write("  <td>" + obj[prop]   + "</td>");
+	document.write("</tr>");
+}
