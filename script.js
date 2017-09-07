@@ -1,21 +1,10 @@
-var i = 100;
-var msg = '';
-while(i > 0) {
-	msg = msg + ' ' + i;
-	
-	switch (i%3) {
-		case 0:
-			msg += "";
-			break;
-		case 1:
-			msg += "#";
-			break;
-		case 2:
-			msg += "##";
-			break;
-	}
-	
-	--i;
-}
+var msg = "<h1>Dymanically geneerated content!</h1>";
 
-alert(msg);
+window.document.writeln(msg);
+
+var i = 0;
+
+while (i < 100) {
+	window.document.write("<p>" + i + "</p>");
+	i++;
+}
