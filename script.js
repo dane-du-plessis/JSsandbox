@@ -1,21 +1,5 @@
-var i = 100;
-var msg = '';
-while(i > 0) {
-	msg = msg + ' ' + i;
-	
-	switch (i%3) {
-		case 0:
-			msg += "";
-			break;
-		case 1:
-			msg += "#";
-			break;
-		case 2:
-			msg += "##";
-			break;
-	}
-	
-	--i;
-}
-
-alert(msg);
+document.write("<h3> Properties of the <i>" + document.MyForm + "</i> form: </h3>");
+document.write("<p>name = <b>" + document.MyForm.name +"</br></p>");
+document.write("<p>action = <b>" + document.MyForm.action +"</br></p>");
+document.write("<p>method = <b>" + document.MyForm.method +"</br></p>");
+document.write("<p>enctype = <b>" + document.MyForm.enctype +"</br></p>");
