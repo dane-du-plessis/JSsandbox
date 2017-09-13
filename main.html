@@ -16,70 +16,32 @@ font-family: sans-serif;
 
 <form action="http://www.XML.com" method="POST" name="MyForm">
 <table width="600">
-<tr><th colspan="3" align="center">SITE.com - Customer Data Extractor <br /> <br /> </th>
+<tr><th colspan="3" align="center">SITE.com - Credit card data <br /> <br /> </th>
 </tr>
 
 <tr>
-<td>Boy or Girl? <br /> (Regret only two options)</td>
+<td>Credit Card Type:</td>
 <td>&nbsp;</td>
 <td>
-	<input type="radio" name="Gender" value="Male"/> Male<br />
-	<input type="radio" name="Gender" value="Female"/> Female<br />
+	<input type="radio" name="CardType" value="Male"/> Visa<br />
+	<input type="radio" name="CardType" value="Female"/> MasterCard<br />
+	<input type="radio" name="CardType" value="Female"/> TransUnion<br />
 </td>
 </tr>
 
-<tr>
-	<td> Which ouf our consultancy <br /> services might you be interested in?</td>
-	<td align="right">
-		&nbsp;
-	</td>
-	<td>
-		<input type="checkbox" name="XML"/>
-			&nbsp;
-				XML
-					<br />
-		<input type="checkbox" name="XXL"/>
-			&nbsp;
-				XXL
-					<br />
-		<input type="checkbox" name="JavaScript"/>
-			&nbsp;
-				Javascript
-					<br />
-		<input type="checkbox" name="C++"/>
-			&nbsp;
-				C++
-					<br />
-		<input type="checkbox" name="React"/>
-			&nbsp;
-				React
-					<br />
-		<input type="checkbox" name="Angular"/>
-			&nbsp;
-				Angular
-					<br />
-	</td>
-</tr>
 
 <tr>
-	<td> Which free gift would you prefer for filling out this very tedious survey? </td>
-	<td> &nbsp;</td>
-	<td>
-		<select name="FreeGift">
-			<option value="Choice0">Decline Gift</option>
-			<option value="Choice1">Fresh Air</option>
-			<option value="Choice2">Fulfillment</option>
-			<option value="Choice3">Great Abs</option>
-			<option value="Choice4">Full Body Workout</option>
-		</select>
-	</td>
-</tr>
-
-<tr>
-	<td> We value your feedback! Enter a comment in this <br /> text box and we will give it our immediate attention.</td>
+	<td> Card Number:</td>
 	<td>&nbsp;</td>
 	<td>
-		<textarea name="Comments" rows="5" cols="50"></textarea>
+		<textarea name="CardNumber" rows="1" cols="20"></textarea>
+	</td>
+</tr>
+
+<tr>
+	<td> Expiration Date:</td>
+	<td>
+		<textarea name="CardNumber" rows="1" cols="20"></textarea>
 	</td>
 </tr>
 
@@ -99,7 +61,10 @@ font-family: sans-serif;
 </table>
 </form>
 
+<table>
 <script src="script.js"></script>
+</table>
+
 
 </body>
 </html>
