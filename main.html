@@ -1,39 +1,35 @@
-<!DOCTYPE html
-PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
+
 <meta charset="utf-8">
 <style>
 html {
 font-family: sans-serif;
 }
 </style>
-<title>Service Request</title>
+<title>Credit Card Info</title>
+
+<script src="functionScript.js"></script>
 
 </head>
 <body>
-
-<form action="http://www.XML.com" method="POST" name="MyForm">
+<form name='MyForm' onsubmit='return validateInput();' action='' method='post'>
 <table width="600">
 <tr><th colspan="3" align="center">SITE.com - Credit card data <br /> <br /> </th>
 </tr>
 
 <tr>
 <td>Credit Card Type:</td>
-<td>&nbsp;</td>
-<td>
+<td colspan="2">
 	<input type="radio" name="CardType" value="Male"/> Visa<br />
 	<input type="radio" name="CardType" value="Female"/> MasterCard<br />
 	<input type="radio" name="CardType" value="Female"/> TransUnion<br />
 </td>
 </tr>
 
-
 <tr>
 	<td> Card Number:</td>
-	<td>&nbsp;</td>
-	<td>
+	<td colspan="2">
 		<textarea name="CardNumber" rows="1" cols="20"></textarea>
 	</td>
 </tr>
@@ -41,15 +37,44 @@ font-family: sans-serif;
 <tr>
 	<td> Expiration Date:</td>
 	<td>
-		<textarea name="CardNumber" rows="1" cols="20"></textarea>
+		<select name="MM" label="MM">
+			<option value="m01">01</option>
+			<option value="m02">02</option>
+			<option value="m03">03</option>
+			<option value="m04">04</option>
+			<option value="m05">05</option>
+			<option value="m06">06</option>
+			<option value="m07">07</option>
+			<option value="m08">08</option>
+			<option value="m09">09</option>
+			<option value="m10">10</option>
+			<option value="m11">11</option>
+			<option value="m12">12</option>
+		</select>
+	</td>
+	
+	<td>
+		<select name="YYYY">
+			<option value="y2017">2017</option>
+			<option value="y2018">2018</option>
+			<option value="y2019">2019</option>
+			<option value="y2020">2020</option>
+			<option value="y2021">2021</option>
+		</select>
 	</td>
 </tr>
 
 <tr>
-	<td>&nbsp;</td>
-	<td>&nbsp;</td>
-	<td>
-		<br /><input type="submit" value="Send Form"/>
+	<td> Card Holder Name:</td>
+	<td colspan="2">
+		<textarea name="CardHolderName" rows="1" cols="20"></textarea>
+	</td>
+</tr>
+
+
+<tr>
+	<td colspan="3">
+		<br /><input type="submit" value="Submit data"/>
 	</td>
 </tr>
 

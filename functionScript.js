@@ -1,18 +1,12 @@
-fuction ClearForm(){
-	document.MyFrom.reset();
-}
-
-function checkValidity() {
+function validateInput() {
+	
+	alert("Checking input data.");
 	var isValid = false;
-	var CN = document.myForm.CardNumber.value;
-	alert("Function called!");
-	if (document.myForm.CardNumber.value !== ""){
+	//var CN = document.MyForm.CardNumber.value;
+	
+	if (document.MyForm.CardNumber.value !== ""){
 		isValid = true;
 	}
-	if (isValid==false) displayErrors();
+	if (isValid==false) alert("Card Number is invalid");
 	return isValid;
-}
-
-function displayErrors() {
-	if (document.myForm.CardNumber.value=="") alert("CardNumber is invalid");
 }
